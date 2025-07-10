@@ -21,6 +21,7 @@ A modern Laravel application for user registration with seamless WhatsApp number
 - Configured mail server (e.g., SMTP, Mailgun, or SendGrid)
   
 🛠️ Usage
+
 User Registration: Access the registration form via the web routes (routes/web.php) to create a new user. The WhatsApp number is validated using the RapidAPI service.
 Email Notifications: New users receive a welcome email via the NewUserRegistered or MyTestEmail Mailable classes.
 API Access: API routes (routes/api.php) are protected with a rate limit of 60 requests per minute.
