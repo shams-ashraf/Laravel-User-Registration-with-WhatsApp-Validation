@@ -1,0 +1,27 @@
+<?php
+return [
+    'registration_title' => 'Registration Form',
+    'registration_form' => 'Registration Form',
+    'full_name' => 'Full Name',
+    'user_name' => 'Username',
+    'email' => 'Email Address',
+    'phone_number' => 'Phone Number',
+    'whatsapp_number' => 'WhatsApp Number',
+    'validate_whatsapp' => 'Validate',
+    'address' => 'Address',
+    'password' => 'Password',
+    'confirm_password' => 'Confirm Password',
+    'profile_picture' => 'Profile Picture',
+    'register' => 'Register',
+    'password_requirements' => 'Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.',
+    'username_taken' => 'Username already taken',
+    'username_available' => 'Username available',
+    'valid_whatsapp' => 'Valid WhatsApp number',
+    'invalid_whatsapp' => 'Invalid WhatsApp number',
+    'validation_error' => 'Error validating number',
+    'invalid_number_format' => 'Please enter a 10-digit number',
+    'registration_success' => 'Registration successful!',
+    'new_user_subject' => 'New registered user',
+    'new_user_body' => 'A new user :username is registered to the system',
+];
+?>
