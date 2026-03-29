@@ -1,28 +1,90 @@
-# Laravel User Registration with WhatsApp Validation
+# 🔐 Laravel User Registration with WhatsApp Validation
 
-![Laravel](https://img.shields.io/badge/Laravel-10.x-red) ![PHP](https://img.shields.io/badge/PHP-8.1+-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+A scalable backend system built with Laravel for secure user registration, featuring WhatsApp number validation using an external API, email notifications, and rate-limited API endpoints.
 
-A modern Laravel application for user registration with seamless WhatsApp number validation via RapidAPI. This project includes email notifications for new users, rate-limited API routes, and a robust authentication system. Perfect for developers looking to integrate WhatsApp validation and email services into their Laravel projects.
+---
 
-## 🌟 Features
-- **User Registration**: Collects user details like full name, username, WhatsApp number, phone number, address, email, and password.
-- **WhatsApp Validation**: Validates WhatsApp numbers using the RapidAPI WhatsApp Number Validator API.
-- **Email Notifications**: Sends welcome emails to new users with Laravel's Mailable system.
-- **API Rate Limiting**: Limits API requests to 60 per minute per user or IP for security.
-- **Secure Authentication**: Built with Laravel's authentication middleware and session management.
-- **Clean Code Structure**: Organized service providers, middleware, and services for scalability.
+## ✨ Features
 
-## 📋 Prerequisites
-- PHP >= 8.1
-- Laravel >= 10.x
-- Composer
-- MySQL or any supported database
-- RapidAPI account for WhatsApp Number Validator API
-- Configured mail server (e.g., SMTP, Mailgun, or SendGrid)
-  
-🛠️ Usage
+- Secure user authentication and registration system  
+- WhatsApp number validation using RapidAPI  
+- Automated email notifications for new users  
+- API rate limiting for enhanced security (60 requests/min)  
+- Clean and modular architecture using services and middleware  
+- RESTful API structure for scalability  
 
-User Registration: Access the registration form via the web routes (routes/web.php) to create a new user. The WhatsApp number is validated using the RapidAPI service.
-Email Notifications: New users receive a welcome email via the NewUserRegistered or MyTestEmail Mailable classes.
-API Access: API routes (routes/api.php) are protected with a rate limit of 60 requests per minute.
-WhatsApp Validation: The WhatsAppValidator service (app/Services/WhatsAppValidator.php) handles phone number validation.
+---
+
+## 🧠 Technical Highlights
+
+- External API integration (WhatsApp validation via RapidAPI)  
+- Laravel Mail system for email handling  
+- Middleware-based request control and validation  
+- Service layer abstraction for better maintainability  
+- Error handling and validation for API responses  
+
+---
+
+## ⚙️ Tech Stack
+
+- Laravel (PHP)  
+- MySQL (or any supported database)  
+- RapidAPI (WhatsApp Number Validator API)  
+- Blade (Frontend templating)  
+
+---
+
+## 📂 Project Structure
+├── app/
+├── routes/
+├── database/
+├── resources/
+├── config/
+├── public/
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+git clone https://github.com/shams-ashraf/Laravel-User-Registration-with-WhatsApp-Validation.git
+
+cd Laravel-User-Registration-with-WhatsApp-Validation
+
+
+### 2. Install dependencies
+
+composer install
+
+
+### 3. Setup environment
+
+cp .env.example .env
+php artisan key:generate
+
+
+### 4. Configure
+- Database connection  
+- Mail server (SMTP / Mailgun / etc)  
+- RapidAPI key  
+
+---
+
+### 5. Run the application
+
+php artisan serve
+
+
+---
+
+## 🔌 API Usage
+
+- Registration via web routes  
+- API routes protected with rate limiting  
+- WhatsApp validation handled through service layer  
+
+---
+
+## 💡 What I Learned
+
+This project helped me build production-like backend systems, integrate external APIs, and design scalable architectures using Laravel.
