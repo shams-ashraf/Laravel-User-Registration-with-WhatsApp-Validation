@@ -36,10 +36,15 @@ A scalable backend system built with Laravel for secure user registration, featu
 
 ## 📂 Project Structure
 ├── app/
+
 ├── routes/
+
 ├── database/
+
 ├── resources/
+
 ├── config/
+
 ├── public/
 
 ---
